@@ -9,9 +9,9 @@ botaoSomar.addEventListener('click', () => {
     console.log(num1+num2);
 })
 
+
+
 const apiCota = 'https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL'
-
-
 
 let eur = (fetch(apiCota)
 .then(response => response.json())
@@ -23,11 +23,12 @@ let usd = (fetch (apiCota))
 
 console.log(eur);
 
-function showCotacao() {
+function showCotacao(cotacao) {
     let valorC;
-    if(cotacao === 2){
-        valorC = usd
+    if(cotacao === 'eur'){
+        valorC = eur
     }
     console.log(valorC);
 }
-console.log(showCotacao(2)); 
+showCotacao();
+//console.log(showCotacao('eur')); 
