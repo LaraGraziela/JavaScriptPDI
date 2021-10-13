@@ -49,7 +49,7 @@ function getCotacao() {
                             break;
                     }
                     showCoin.innerHTML = `
-                    <h4>Informações de Moeda:</h4>
+                    <h4>Informações de Cotação:</h4>
                     
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">Nome: ${coin.name}</li>

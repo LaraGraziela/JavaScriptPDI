@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
-h3 {
+h3, h4 {
     font-family: 'Roboto', sans-serif;
     color: #28a745;
 }
@@ -24,14 +24,15 @@ h3 {
 
 .links:hover{
     color:rgb(0, 102, 0);
+    transition: 0.4s;
 }
 
 .home {
     display:block;
     text-align:center;
-    font-family: 'Roboto', sans-serif;
 }
 
-img{
+img {
     margin: 50px;
 }
+
