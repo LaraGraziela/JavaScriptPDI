@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="cotacao.css">
+    <title>Cotações</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-success">
+        <a class="navbar-brand links" href="home.html">CoLife</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active links" href="home.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link links" href="#">Cotações</a>
+           
+          </div>
+        </div>
+      </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="cotacao">
+                    <h4>Buscar Cotação</h4>
+                    <p>Selecione uma moeda:</p>
+                    <select class="custom-select " name="cotacao" id="coins" onchange="getOption()">
+                        <option value="">Selecione</option>
+                        <option value="EUR-BRL">EURO/REAL</option>
+                        <option value="EUR-USD">EURO/DÓLAR</option>
+                        <option value="USD-BRL">DÓLAR/REAL</option>
+                        <option value="USD-EUR">DÓLAR/EURO</option>
+                        <option value="BTC-BRL">BITCOIN/REAL</option>
+                    </select><br><br>
+
+                    <input class="form-control" type="text" id="text" disabled><br>
+
+                    <button class="btn btn-success"id='getMoeda'>Buscar</button>
+
+                    
+                </div>
+
+            </div>
+            <div class="col"> </h4><div id="show"><h4>Informações de Cotação:</h4></div></div>
+
+        </div>
+
+    </div>
+    <script src='./cotacao.js'></script>
+</body>
+
+</html>
